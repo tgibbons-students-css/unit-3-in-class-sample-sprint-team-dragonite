@@ -18,7 +18,7 @@ namespace Sermo.Data.Mongo
         {
             this.applicationSettings = applicationSettings;
         }
-
+        // Changes for Sprint  -- “I want to serve hundreds of users concurrently.” -- Dan Blasena
         public IEnumerable<RoomViewModel> GetAllRooms()
         {
             var roomsCollection = GetRoomsCollection();
@@ -43,7 +43,7 @@ namespace Sermo.Data.Mongo
             var messagesCollection = GetMessagesCollection();
             messagesCollection.Save(messageViewModel);
         }
-
+        // Changes for Sprint 2 -- “I want to serve hundreds of users concurrently.” -- Dan Blasena
         private MongoCollection<MessageViewModel> GetMessagesCollection()
         {
             var database = GetDatabase();
