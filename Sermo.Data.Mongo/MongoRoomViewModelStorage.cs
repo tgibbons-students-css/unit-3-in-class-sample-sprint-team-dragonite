@@ -11,7 +11,7 @@ using MongoDB.Driver;
 using MongoDB.Driver.Builders;
 
 namespace Sermo.Data.Mongo
-{
+{// Changes for Sprint 2 -- “I want to serve hundreds of users concurrently.” -- Dan Blasena
     public class MongoRoomViewModelStorage : IRoomViewModelReader, IRoomViewModelWriter
     {
         public MongoRoomViewModelStorage(IApplicationSettings applicationSettings)
