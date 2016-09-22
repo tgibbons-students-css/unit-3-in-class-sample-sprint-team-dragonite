@@ -37,7 +37,7 @@ namespace Sermo.UnitTests
         }
 
         [SetUp]
-        public void SetUp()
+        public void SetUp() //Changes for Sprint #2 -- I want to send markdown that will be correctly formatted. -- Trace Combs
         {
             markdown = new Markdown();
             message1 = new MessageViewModel

@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace Sermo.UI.Contracts
 {
+    // Changes for Sprint 2 -- “I want to filter message content so that it is appropriate.” -- Shawn Pohlmann
+    // Changes Sprint 2 --  I want to create rooms for categorizing conversations -- Shawn Pohlmann
     public class ContentFilteredAttribute : ValidationAttribute
     {
+        // Changes Sprint 2 --  I want to create rooms for categorizing conversations -- Shawn Pohlmann
         private readonly string[] blacklist = new string[] 
         {
             "hefferlump",
