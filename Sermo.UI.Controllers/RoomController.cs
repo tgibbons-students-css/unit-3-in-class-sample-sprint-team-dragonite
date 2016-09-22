@@ -39,7 +39,9 @@ namespace Sermo.UI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(RoomViewModel model) // Changes for Sprint #1 -- I want to create rooms for categorizing conversations -- Trace Combs
+        public ActionResult Create(RoomViewModel model)
+        // Changes for Sprint #1 -- I want to create rooms for categorizing conversations -- Trace Combs
+        // Changes for Sprint #1 -- I want to view a list of rooms that represent conversations. -- Trace Combs
         {
             ActionResult result;
  
