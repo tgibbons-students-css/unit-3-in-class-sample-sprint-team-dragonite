@@ -18,7 +18,7 @@ namespace Sermo.Data.Mongo
         {
             this.applicationSettings = applicationSettings;
         }
-
+        // Changes for Sprint  -- “I want to serve hundreds of users concurrently.” -- Dan Blasena
         public IEnumerable<RoomViewModel> GetAllRooms()
         {
             var roomsCollection = GetRoomsCollection();
