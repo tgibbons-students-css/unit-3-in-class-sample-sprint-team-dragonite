@@ -12,6 +12,7 @@ using System.Net;
 namespace Sermo.UI.Controllers
 {
     // Changes for Sprint # -- User Story -- Shawn Pohlmann
+    // Changes for Sprint 1 -- “I want to send plain text messages to other room members.” -- Dan Blasena
     public class RoomController : Controller
     {
         public RoomController(IRoomViewModelReader reader, IRoomViewModelWriter writer)
@@ -38,7 +39,9 @@ namespace Sermo.UI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(RoomViewModel model) // Changes for Sprint #1 -- I want to create rooms for categorizing conversations -- Trace Combs
+        public ActionResult Create(RoomViewModel model)
+        // Changes for Sprint #1 -- I want to create rooms for categorizing conversations -- Trace Combs
+        // Changes for Sprint #1 -- I want to view a list of rooms that represent conversations. -- Trace Combs
         {
             ActionResult result;
  
@@ -65,6 +68,7 @@ namespace Sermo.UI.Controllers
         }
 
         [HttpPost]
+        // Changes for Sprint 1 -- “I want to send plain text messages to other room members.” -- Dan Blasena
         public ActionResult AddMessage(MessageViewModel messageViewModel)
         {
             ActionResult result;
