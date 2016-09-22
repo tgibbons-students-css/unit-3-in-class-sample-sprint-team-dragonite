@@ -17,6 +17,8 @@ using System.ComponentModel.DataAnnotations;
 namespace Sermo.UnitTests
 {
     [TestFixture]
+    //Changes for Sprint 1--User Story 1--Ty Rosenberger
+    //Changes Sprint 1--I want to create rooms for categorizing conversations--Ty Rosenberger
     public class RoomControllerTests
     {
         [Test]
