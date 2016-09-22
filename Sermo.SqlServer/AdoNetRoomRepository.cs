@@ -21,7 +21,7 @@ namespace Sermo.Data.AdoNet
             this.applicationSettings = applicationSettings;
             this.databaseFactory = databaseFactory; 
         }
-
+        // Changes for Sprint 1 -- I want to create a room to use -- Dan Blasena
         public void CreateRoom(string name)
         {
             using(var connection = databaseFactory.CreateConnection())
