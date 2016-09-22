@@ -11,6 +11,7 @@ using Sermo.UI.Contracts;
 
 namespace Sermo.UI.Controllers
 {
+    // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Shawn Pohlmann
     public class RepositoryRoomViewModelService : IRoomViewModelReader, IRoomViewModelWriter
     {
         public RepositoryRoomViewModelService(IRoomRepository roomRepository, IMessageRepository messageRepository, IViewModelMapper mapper)
@@ -34,7 +35,7 @@ namespace Sermo.UI.Controllers
             }
             return allRooms;
         }
-
+        // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Shawn Pohlmann
         public IEnumerable<MessageViewModel> GetRoomMessages(int roomID)
         {
             var roomMessages = new List<MessageViewModel>();
