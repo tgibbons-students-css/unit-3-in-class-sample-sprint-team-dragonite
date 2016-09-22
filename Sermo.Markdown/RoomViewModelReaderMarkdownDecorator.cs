@@ -23,7 +23,7 @@ namespace Sermo.Markdown
             return @delegate.GetAllRooms();
         }
 
-        public IEnumerable<MessageViewModel> GetRoomMessages(int roomID)
+        public IEnumerable<MessageViewModel> GetRoomMessages(int roomID) //Changes for Sprint #2 -- I want to send markdown that will be correctly formatted. -- Trace Combs
         {
             var roomMessages = @delegate.GetRoomMessages(roomID);
 
