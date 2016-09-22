@@ -11,6 +11,7 @@ using System.Net;
 
 namespace Sermo.UI.Controllers
 {
+    // Changes for Sprint # -- User Story -- Shawn Pohlmann
     public class RoomController : Controller
     {
         public RoomController(IRoomViewModelReader reader, IRoomViewModelWriter writer)
